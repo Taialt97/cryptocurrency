@@ -1,0 +1,246 @@
+/* --- Colors ---
+Red : #ff6384
+Orang : #ff9f40
+Yellow : #ffcd56
+LightBlue: #4bc0c0
+Blue: #36a2eb
+CardGreenDark: #71ba3e
+CardGreenMid: #91d111
+CardGreenLight: #a6dd22
+CardBlueDark: #0066cc
+CardBlueMid: #0b74de
+CardBlueLight: #1180f0 */
+
+/* ----- Fonts -----
+font-family: 'Roboto', sans-serif;
+font-family: 'Open Sans', sans-serif;     */
+
+.credit-card {
+    display: inline-block;
+    margin: 3px;
+}
+
+/* ---------- Card Active ----------*/
+.displayNone {
+    display: none;
+    opacity: 0;
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+
+}
+
+/* ---------- Card Active ----------*/
+.Active {
+    background-color: #71ba3e !important;
+    background-image: url(./Images/SVG/Card_Moon_Active.svg) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out; */
+}
+
+/* ---------- Card ----------*/
+.credit-card-container {
+    display: inline-block;
+    position: relative;
+    float: right !important;
+}
+
+
+.expandCard {
+    width: 300px;
+    height: 190px !important;
+    -webkit-transition: height 0.2s ease-in-out;
+    -moz-transition: height 0.2s ease-in-out;
+    -o-transition: height 0.2s ease-in-out;
+    transition: height 0.2s ease-in-out;
+}
+
+.front {
+    height: 50px;
+    width: 300px;
+    transform: scale(1, 1);
+    background-color: #0066cc;
+    border-radius: 20px;
+ 
+    background-image: url(./Images/SVG/Card_Moon_Normal.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+
+}
+
+.back {
+    height: 50px;
+    width: 300px;
+    transform: scale(1, 1);
+    background-color: #0066cc;
+    background-image: url(./Images/SVG/Card_Back.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    display: inline-block;
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+}
+
+.cardLogo {
+    position: absolute;
+    bottom: 0px;
+    right: -45px;
+    border-radius: 50px;
+}
+
+.cardText {
+    position: absolute;
+}
+
+.TEXTCONTAINER {
+    border: 1px solid red;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    width: 270px;
+    height: 160px;
+}
+
+.cardHeading {
+    font-variant-caps: all-petite-caps;
+    font-size: 26px;
+    font-weight: bold;
+    margin: 2.4px 0px 0px 13px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.cardSubHeading {
+    font-weight: 100;
+    font-size: 12px
+}
+
+
+.cardCurencyes {
+    margin-left: 15px;
+}
+
+.cardCurency {
+    font-size: 9px;
+    margin: 0px 40px 0px 0px;
+}
+
+.cardValue {
+    margin: 0px 0px 0px 15px;
+}
+
+.value {
+    line-height: 10px;
+    font-weight: bold;
+    margin: 0px 0px 7px 0px;
+}
+
+.info {
+    font-size: 8px;
+    margin: 0px 25px 0px 0px;
+}
+
+.infoValue {
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.cardFlip {
+    font-size: 10px;
+    font-weight: bold;
+    margin: 39px 0px 0px 15px;
+    cursor: pointer;
+}
+
+.cardWhight {
+    font-weight: 100;
+    font-size: 8px;
+}
+
+/* ---------- Card Back ----------*/
+
+.cardTextBack {
+    font-size: 10px;
+    line-height: 1.2;
+    position: absolute;
+    top: 82px;
+    padding: 12px;
+    height: 95px;
+    overflow: hidden;
+}
+
+.cardFlipBack {
+    color: gray;
+    margin: 31px 0px 0px 235px
+}
+
+.spinner {
+    z-index: 999999;
+    position: absolute;
+    top: 16.5px;
+    right: -20px;
+}
+
+/* Modal */
+.modal-content {
+    border: none;
+    border-radius: 30px;
+    background: #a6dd22;
+    color: white;
+    width: 320px;
+    margin: auto
+}
+
+.modal-header {
+    display: block;
+    text-align: center
+}
+
+.modal-body {
+    background: white;
+    border-radius: 0px 0px 30px 30px;
+    padding: 12.5px 0px 9.5px 0px !important;
+}
+
+.modal{
+    transform: scale(0.9);
+    width:100%
+}
+
+.serch {
+    border-radius: 50px;
+    height: 25px;
+    background: none;
+    border: 2px solid #0b74de;
+    color: #0b74de !important;
+    font-size: 12px;
+}
+
+#myChart{
+    margin-top: 80px;
+    padding-left: 24px;
+}
+
+.InnerChart{
+    padding: 0px 10px;
+    margin-right: 21.8rem;
+}
+
+.ui-widget.ui-widget-content{
+    z-index: 999999;
+    max-height: 310px;
+    overflow: scroll;
+    
+}

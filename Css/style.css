@@ -1,0 +1,51 @@
+/* --- Colors ---
+Red : #ff6384
+Orang : #ff9f40
+Yellow : #ffcd56
+LightBlue: #4bc0c0
+Blue: #36a2eb
+CardGreenDark: #71ba3e
+CardGreenMid: #91d111
+CardGreenLight: #a6dd22
+CardBlueDark: #0066cc
+CardBlueMid: #0b74de
+CardBlueLight: #1180f0 */
+
+/* ----- Fonts -----
+font-family: 'Roboto', sans-serif;
+font-family: 'Open Sans', sans-serif;     */
+
+
+html,
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    /* remove scrollbar space */
+    background: transparent;
+    /* optional: just make scrollbar invisible */
+}
+
+.backgorundimag{
+    height: 320px;
+    width: 320px;
+    background-image: url(/Css/Images/PNG/ME.jpg);
+    background-size: 320px;
+    background-repeat: no-repeat;
+
+}
+
+.Myshadow{
+    -webkit-box-shadow: 9px 10px 20px -13px rgba(189,189,189,1);
+    -moz-box-shadow: 9px 10px 20px -13px rgba(189,189,189,1);
+    box-shadow: 9px 10px 20px -13px rgba(189,189,189,1);
+}

@@ -1,0 +1,85 @@
+/* --- Colors ---
+Red : #ff6384
+Orang : #ff9f40
+Yellow : #ffcd56
+LightBlue: #4bc0c0
+Blue: #36a2eb
+CardGreenDark: #71ba3e
+CardGreenMid: #91d111
+CardGreenLight: #a6dd22
+CardBlueDark: #0066cc
+CardBlueMid: #0b74de
+CardBlueLight: #1180f0 */
+
+/* ----- Fonts -----
+font-family: 'Roboto', sans-serif;
+font-family: 'Open Sans', sans-serif;     */
+
+/* Blue Button ---------------------------------------------------- */
+.btn {
+    position: absolute;
+    top: 17px;
+    right: 15px;
+    padding: 1px 6px;
+    font-size: 9px;
+    border: 0 none;
+    font-weight: 100;
+}
+ 
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+ 
+.btn-Blue {
+    background: #1180f0;
+    color: #ffffff;
+}
+ 
+.btn-Blue:hover, .btn-Blue:focus, .btn-Blue:active, .btn-Blue.active, .open > .dropdown-toggle.btn-Blue {
+    background: #1180f0;
+    box-shadow: none;
+    color: #ffffff;
+
+}
+ 
+.btn-Blue:active, .btn-Blue.active {
+    background: #007299;
+    box-shadow: none;
+    color: #ffffff;
+
+}
+
+/* Green Button ----------------------------------------------------  */
+
+.btn {
+    position: absolute;
+    top: 17px;
+    right: 15px;
+    padding: 1px 6px;
+    font-size: 9px;
+    border: 0 none;
+    font-weight: 100;
+}
+ 
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+ 
+.btn-Green {
+    background: #91d111;
+    color: #ffffff;
+}
+ 
+.btn-Green:hover, .btn-Green:focus, .btn-Green:active, .btn-Green.active, .open > .dropdown-toggle.btn-Green {
+    background: #a6dd22;
+    box-shadow: none;
+    color: #ffffff;
+
+}
+ 
+.btn-Green:active, .btn-Green.active {
+    background: #a6dd22;
+    box-shadow: none;
+    color: #ffffff;
+
+}

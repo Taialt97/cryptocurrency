@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Head -->
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<!-- Title -->
+	<title>Document</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+	 crossorigin="anonymous" />
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" />
+	<!-- Font Awsome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+	 crossorigin="anonymous">
+	<!-- CSS -->
+	<link rel="stylesheet" href="./Css/style.css" />
+	<link rel="stylesheet" href="./Css/Card.css" />
+	<link rel="stylesheet" href="./Css/Card_Button.css" />
+	<link rel="stylesheet" href="./Css/boxes.css">
+	<!-- jQuery -->
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js" defer></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" defer></script>
+	<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js" defer></script>
+	<!-- Bootstrap.js -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+	 crossorigin="anonymous" defer></script>
+	<!-- JavaScript -->
+	<script src="./Java_Script/script.js" defer></script>
+	<script src="./Java_Script/home_chart.js" defer></script>
+	<!-- Charts Js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.7.3/dist/Chart.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.5.0"></script>
+</head>
+
+<body>
+	<!-- ----------------------------------------------------------------------- NAV BAR ----------------------------------------------------------------------- -->
+	<!-- ----- Nav Bar ----- -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+		<div class="container">
+			<!-- Chart -->
+			<div class="d-lg-none d-xl-none e" style="color: #0b74de; font-size:20px; cursor: pointer;">
+				<i id="Charts" class="fas fa-chart-line liveCharts_page"></i>
+			</div>
+			<!-- Logo and pages-->
+			<div>
+				<!-- Logo -->
+				<a href="#top">
+					<img class="home" src="./Css/Images/SVG/Logo.svg" alt="" width=80px style="margin-bottom: 2px;  cursor: pointer;">
+				</a>
+				<!-- Pages -->
+				<div class="d-none d-lg-block float-right">
+					<div class="float-right about" style="margin: 0px 0px 0px 30px; padding-top:2px; color:#0b74de; font-size:14px; cursor: pointer;">About</div>
+					<div class="float-right liveCharts_page" style="margin: 0px 0px 0px 30px; padding-top:2px; color:#0b74de; font-size:14px; cursor: pointer;">
+						<a href="#top">Live Chart</a>
+					</div>
+
+				</div>
+			</div>
+			<!-- Serch for desktop -->
+			<div class="form-inline d-none d-lg-block">
+				<input id="serchDesktop" class="serch form-control mr-sm-2" type="search" placeholder="Search Curerncy" aria-label="Search">
+				<i class="fas fa-search" style="cursor: pointer; color:#0b74de"></i>
+			</div>
+			<!-- Serch for Phone -->
+			<i class="fas fa-search d-lg-none d-xl-none " data-toggle="collapse" style="color:#0b74de; cursor: pointer;"
+			 data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+			</i>
+		</div>
+		<!-- Serch colleps Content -->
+		<div class="collapse pt-2 m-auto" id="collapseExample">
+			<input id="serchPhone" class="serch form-control mr-sm-2" type="search" placeholder="Search Curerncy" aria-label="Search">
+		</div>
+	</nav>
+	<!-- ----- White Border ----- -->
+	<div class="HomeBorder" style="height: 80px; width: 40%;
+			background: white; z-index: 9; position: fixed; top: 0; right: 0;"></div>
+
+	<div class="HomeBorder d-lg-none" style="height: 80px; width: 100%;
+	background: white; z-index: 9; position: fixed; top: 0; right: 0;"></div>
+
+	<div id="LiveBorder" style="height: 80px; width: 100%;
+			background: white; z-index: 9; position: fixed; top: 0; right: 0;"></div>
+	<!-- ----------------------------------------------------------------------- HOME PAGE----------------------------------------------------------------------- -->
+	<div id="home_page" style="overflow: hidden;">
+		<!-- ----- Cards ----- -->
+		<div class="container">
+			<div class="row">
+				<div class="col-12 p-0 d-flex 
+			justify-content-center
+			justify-content-sm-center
+			justify-content-md-center
+			justify-content-lg-end
+			justify-content-xk-end
+			">
+					<div class="cardCheckRed CardsArea"></div>
+				</div>
+			</div>
+		</div>
+		<!-- Chart -->
+		<div class="fixed-top" style="z-index: -1;">
+			<div class="container p-0">
+				<div class="InnerChart p-0 row">
+					<canvas class="d-none d-lg-block" id="myChart" style="height: 90vh;"></canvas>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- ----------------------------------------------------------------------- MODAL----------------------------------------------------------------------- -->
+	<!-- ----- Modal ----- -->
+	<div data-backdrop="static" class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+	 aria-hidden="true" style="z-index: 9999999;">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" style="top: 27px; right: 35px;" class="text-light p-0 close position-absolute" data-dismiss="modal"
+					 aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<div class="row justify-content-center">
+						<div class="col-10">
+							<h1 class="m-0 p-0" style="font-weight: bold">SORRY</h1>
+							<p class="m-0 p-0" style="font-size: 15px; line-height: 15px">
+								We can only handle five
+								<br />
+								currencies at the moment
+							</p>
+							<h4 class="mt-3 m-0 p-0" style="font-weight: bold; font-size: 16px;">Pelase Remove One To
+								Continue</h4>
+						</div>
+					</div>
+				</div>
+				<div class="modal-body p-0 m-0">
+					<!-- Modal Content -->
+					<div class="modalContent row justify-content-center  m-0 p-0">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Chart -->
+	<div id="chartModal" class="modal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-title p-3 text-center">
+					<h3 class="p-0" style="font-size: 40px !important; font-weight: bold">Sorry
+						<br>
+						<h5>no information was found, try a diffrent coin</h5>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- ----------------------------------------------------------------------- ABOUT----------------------------------------------------------------------- -->
+	<div id="about_page" style="height: 100vh; overflow: hidden !important;"></div>
+	<!-- ----------------------------------------------------------------------- Live Charts----------------------------------------------------------------------- -->
+	<div id="liveCharts_page" style="margin: 80px 0px 0px 0px;">
+		<div class="container" style="margin-top: 40px;">
+			<div class="row chart001">
+				<div class="col-12">
+					<canvas id="redChart"></canvas>
+				</div>
+			</div>
+		</div>
+
+		<div class="boxestop container fixed-md-top d-none" style="top: 90px; background: white;">
+			<div class=" row justify-content-center px-4 mb-3 ">
+				<div class="col-12 col-sm-12 col-md mr-md-2 mt-4 text-center text-light flex-column button001" style="cursor: pointer; height: 280px; background: #ff6384">
+					<h3 class="nameof01 mt-4"><b>No Coin</b></h3>
+					<h6 class="p-0">Curret Value <br><span class="current01">0000</span></h6>
+				</div>
+				<div class="col-12 col-sm-12 col-md mr-md-2 mt-4 text-center text-light flex-column button002" style="cursor: pointer; height: 280px; background: #ff9f40">
+					<h3 class="nameof02 mt-4"><b>No Coin</b></h3>
+					<h6 class="p-0">Curret Value <br><span class="current02">0000</span></h6>
+				</div>
+				<div class="col-12 col-sm-12 col-md mr-md-2 mt-4 text-center text-light flex-column button003" style="cursor: pointer; height: 280px; background: #ffcd56">
+					<h3 class="nameof03 mt-4"><b>No Coin</b></h3>
+					<h6 class="p-0">Curret Value <br><span class="current03">0000</span></h6>
+				</div>
+				<div class="col-12 col-sm-12 col-md mr-md-2 mt-4 text-center text-light flex-column button004" style="cursor: pointer; height: 280px; background: #4bc0c0">
+					<h3 class="nameof04 mt-4"><b>No Coin</b></h3>
+					<h6 class="p-0">Curret Value <br><span class="current04">0000</span></h6>
+				</div>
+				<div class="col-12 col-sm-12 col-md mr-md-0 mt-4 text-center text-light flex-column button005" style="cursor: pointer; height: 280px; background: #36a2eb">
+					<h3 class="nameof05 mt-4"><b>No Coin</b></h3>
+					<h6 class="p-0">Curret Value <br><span class="current05">0000</span></h6>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	</div>
+	</div>
+</body>
+
+</html>

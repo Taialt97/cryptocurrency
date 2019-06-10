@@ -1,0 +1,46 @@
+.ChartBox{
+    border-radius: 20px 20px 0px 0px ;
+    margin: 0px 5px;
+    max-height: 30vh;
+    min-height: 40px;
+    position: relative;
+}
+
+.ChartContainer{
+    height: 100vh;
+}
+
+.InnerChartBox{
+    margin-right: 14.5rem;
+    padding-left: 10px;
+}
+
+.cardCheckRed{
+    margin-top: 80px;
+    width: 306px;
+}
+
+.boxText{
+    text-align: center;
+    position: relative;
+    top:-25px; 
+    font-weight: 700;
+    text-transform:uppercase;
+}
+
+.boxnumber{
+    text-align: center;
+    position: relative;
+    color: white;
+    top:-15px ; 
+    font-weight: 700;
+}
+
+.boxPhone{
+    height: 40px;
+    max-height: 30vh;
+    min-height: 40px;
+    border-radius: 10px 10px 0px 0px ;
+    margin: 0px 2px;
+    position: relative;
+}
